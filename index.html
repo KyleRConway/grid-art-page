@@ -12,12 +12,29 @@
         box-sizing: border-box;
     }
 
+    h1, h2 {
+	color: white;
+	font-family: oxygen;
+	text-align: center;
+    }
+
+    h1 {
+	font-weight: bold;
+	font-size: 4em;
+	text-transform: uppercase;
+    }
+
+    h2 {
+	font-weight: normal;
+	font-size: 1.2em;
+    }
+
     body {
         background: #000;
         margin: 1em;
     }
 
-    main {
+    .images {
         display: grid;
         grid-gap: 1rem;
         grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
@@ -42,7 +59,9 @@
     
     </style>
 <body>
-    <main>
+  <h1>sketches</h1>
+  <h2>hover over an image to see a more fully rendered version (if it has been created)</h2>
+    <main class="images">
         <img src="./Set-01/Kyle-Art-0.jpg" onmouseover="this.src='./Set-01/Kyle-Art-0-c.png';" onmouseout="this.src='./Set-01/Kyle-Art-0.jpg';"></img>
         <img src="./Set-01/Kyle-Art-10.jpg"></img>
         <img src="./Set-01/Kyle-Art-11.jpg" onmouseover="this.src='./Set-01/Kyle-Art-11-c.png';" onmouseout="this.src='./Set-01/Kyle-Art-11.jpg';"></img>
